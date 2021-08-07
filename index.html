@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Porfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;500;900&display=swap');
+    </style>
 </head>
-<body>
+<body>    
     <nav>
         <h1>Ven Gallardo</h1>
         <div class="tagline">My Minimalist <br/>Portfolio</div>
@@ -18,11 +20,27 @@
         </div>
         
         <div class="page" id="page">
-            <ul>
-                <li>MY PROJECTS</li>
-                <li>ABOUT ME</li>
-                <li>CONTACT</li>
+            <ul class="nav">
+                <li id="project">PROJECTS</li>
+                <li id="about">ABOUT</li>
+                <li id="contact">CONTACT</li>
+                <li id="skills">SKILLS</li>
             </ul>
+            <div class="logo">Ven Gallardo</div>
+            <div class="container" id="about-c">
+                <div class="nav-det">
+                    <p>Navigation</p>
+                    <p class="not">></p>
+                    <p>About</p>
+                </div>
+                <div class="photo">
+                    <img src="img/Untitled design (7).png" alt="">
+                </div>
+                <div class="about-me">
+                    <p> Hi there, My name is Ven Gallardo and I specialized in website development and design. Before I was just a grab driver and a driver for a rental services here in Manila. But when the pandemic strikes, I decided to shift my career into web development. This is to pursue my dream on programming and designs. I first stumbled on no code platforms like bubble.io and glide.io. And then after learning some basic knowledge on how websites work. I then started to code in HTML, CSS, JavaScript and React JS. Now this website is running only with code using google cloud as server.</p>
+                </div>
+                <div class="download">Download my resume...</div>
+            </div>
         </div>
     </nav>
     <script src="script.js"></script>

@@ -1,3 +1,4 @@
+
 :root {
     /* FONTS */
     --f600: #9798A1;
@@ -5,15 +6,16 @@
 
     /* BACKGROUND */
     --bg-nav: #0F111C;
-    --bg-page: #212227;
+    --bg-page: #121526;
 
 }
+
 
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -25,11 +27,13 @@
 
 /* FULL PAGE NAVIGATION */
 
+
 nav {
     width: 100vw;
     height: 100vh;
     background-color: var(--bg-nav);
     position: relative;
+    overflow: hidden;
 }
 
 nav h1{
@@ -38,25 +42,40 @@ nav h1{
     left: 20px;
     top: 10px;
     font-size: 2ch;
+    font-weight: 500;
+    /* z-index: 3; */
 }
 
 nav .tagline {
     position: absolute;
-    left: 20%;
-    top: 35%;
+    left: 18%;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 10ch;
-    font-weight: 600;
+    font-weight: 300;
     color: var(--f600);
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
+.tagline::after {
+    position: absolute;
+    top: 0%;
+    left: 75%;
+    content: '';
+    width: 25%;
+    height: 2px;
+    background: sandybrown;
+}
+
 .nav-ctn {
+    z-index: 4;
     position: absolute;
     width: 80px;
     height: 100px;
-    top: 40%;
-    left: 1%;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
 
     /* nav btn position */
     display: flex;
@@ -91,7 +110,7 @@ nav .tagline {
     content: '';
     position: absolute;
     width: 28px;
-    height: 2px;
+    height: 4px;
     background: cornsilk;
     transform: translateY(-10px);
     transition: 500ms;
@@ -109,7 +128,7 @@ nav .tagline {
     content: '';
     position: absolute;
     width: 28px;
-    height: 2px;
+    height: 4px;
     background: cornsilk;
     transform: translateY(10px);
     transition: 500ms;
@@ -126,18 +145,136 @@ nav .tagline {
 /* PAGE NAVIGATION */
 
 .page {
-
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background: var(--bg-page);
-    transform: translateX(-120%);
+    transform: translateX(-100%);
     transition: transform 1000ms ease;
+    z-index: 2;
+    overflow-x: hidden;
    
 }
 
 .page.active {
     transform: translateX(0%);
-    position: absolute;
-    z-index: 2;
+    /* position: absolute; */
+    /* z-index: 2; */
 
+}
+
+.page .logo{
+    position: absolute;
+    color: var(--f400);
+    left: 20px;
+    top: 10px;
+    font-size: 2ch;
+    font-weight: 500;
+}
+
+.page ul {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+}
+
+.page ul li{
+    padding: 10px;
+    color: var(--f600);
+    font-size: 8ch;
+    transition: color 300ms ease;
+    font-weight: 400;
+}
+
+.page ul li:hover {
+    cursor: pointer;
+    color: var(--f400);
+}
+
+.page li.toggle {
+    color: var(--f400);
+}
+
+
+/* CONTAINER FOR DETAILS */
+
+.page .container {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    width: 50%;
+    background: var(--bg-nav);
+    border: none;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    /* overflow-y: scroll; */
+    
+
+    /* DETAILS POSITION */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ABOUT */
+.container .nav-det{
+    /* position: absolute;
+    top: 2px;
+    left: 10px; */
+    font-size: 2ch;
+    font-weight: 400;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nav-det p{
+    display: inline;
+    color: var(--f600);
+}
+
+.photo img {
+    height: 300px;
+    width: 300px;
+    border: none;
+    border-radius: 150px;
+}
+
+.nav-det p:hover{
+    cursor: pointer;
+    color: var(--f400);
+}
+
+.nav-det .not:hover{
+    color: black;
+    cursor:text;
+}
+
+.container .about-me{
+    color: var(--f400);
+    padding: 40px 30px;
+    font-size: 18px;
+    height: 40%;
+    line-height: 30px;
+}
+
+.container.show{
+    display: flex;
+}
+
+/* RESUME DOWNLOAD */
+.download {
+    color: var(--f400);
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.download:hover {
+    cursor: pointer;
 }
