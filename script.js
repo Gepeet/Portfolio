@@ -10,30 +10,70 @@ toggle.onclick = function(){
 }
 
 
+
 // navigation 
 
-const about = document.getElementById('about');
-const project = document.getElementById('project');
-const skills = document.getElementById('skills');
+const ctainer = document.getElementsByClassName('container');
+const bbtn = document.getElementsByClassName('btn');
 
-const aboutC = document.getElementById('about-c');
+const button = document.getElementsByClassName('btn');
+    for (i = 0; i < button.length; i++) {
+        button[i].addEventListener('click', toggleItem, false);
+      
+    }
+    function toggleItem() {
+        let itemId = this.id;
+        
 
-about.onclick = function(){
-    aboutC.classList.add('show');
-    project.classList.remove('show');
-    skills.classList.remove('show');
-    about.classList.add('toggle');
+        for (i = 0 ; i < button.length; i++){
+            if(button[i].id === itemId){
+            button[i].classList.add("toggle");
+        
+        }else{
+            button[i].classList.remove("toggle");
+      
+        }
+        }
+        
+        renderContainer();
+    
+    function renderContainer() {
+        const container = document.getElementsByClassName('container');
 
+        for (i = 0; i < container.length; i++) {
+            if(itemId === container[i].id){
+                container[i].classList.add("show");
+                // if (link.id === itemClass){
+                //     link.classList.add("toggle");
+                // }else{
+
+                // }
+
+            }else{
+                container[i].classList.remove("show");
+                // link.classList.remove("toggle");
+            }
+        }
+    }
 }
-project.onclick = function(){
-    aboutC.classList.remove('show');
-    project.classList.add('show');
-    skills.classList.remove('show');
 
+function back(){
+    for (i=0; i<ctainer.length;i++){
+        ctainer[i].classList.remove("show");
+    }
+    for (i=0; i<bbtn.length;i++){
+        bbtn[i].classList.remove("toggle");
+    }
 }
-skills.onclick = function(){
-    aboutC.classList.remove('show');
-    project.classList.remove('show');
-    skills.classList.add('show');
 
-}
+      ///BACK OR REMOVE TOGGLE AND SHOW 
+
+
+//     function removeB(){
+//         const rbtn = document.getElementsByClassName('btn');
+        
+//         rbtn.classList.remove("toggle");
+        
+//     }
+// }
+// }

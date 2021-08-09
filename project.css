@@ -1,0 +1,20 @@
+:root {
+    /* FONTS */
+    --f600: #9798A1;
+    --f400: #EDEDED;
+
+    /* BACKGROUND */
+    --bg-nav: #0F111C;
+    --bg-page: #121526;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+}
+
+.project h2 {
+    color: var(--f400);
+    text-align: center;
+}

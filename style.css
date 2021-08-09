@@ -193,7 +193,7 @@ nav .tagline {
     color: var(--f400);
 }
 
-.page li.toggle {
+.btn.toggle {
     color: var(--f400);
 }
 
@@ -202,7 +202,7 @@ nav .tagline {
 
 .page .container {
     position: absolute;
-    right: 5%;
+    right: 2%;
     top: 50%;
     transform: translateY(-50%);
     height: fit-content;
@@ -219,7 +219,17 @@ nav .tagline {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
 }
+
+/* .container{
+    animation: fadeOut 1000ms;
+}
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+   */
 
 
 /* ABOUT */
@@ -266,7 +276,15 @@ nav .tagline {
 
 .container.show{
     display: flex;
+
+      /* FADE IN ANIMATION */
+    animation: fadeIn 1000ms;
 }
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
 
 /* RESUME DOWNLOAD */
 .download {
