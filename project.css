@@ -10,11 +10,120 @@
 }
 
 .project{
+    height: 90vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .project h2 {
     color: var(--f400);
     text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    outline: var(--f600) 1px solid;
+    padding: 10px 20px;
+}
+
+.project .myprojects{
+    /* background-color: blanchedalmond; */
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    /* position: absolute; */
+    background-color: black;
+    display: flex;
+    padding: 100px 0 0;
+    background-size: cover;
+    flex-direction: column;
+    color: var(--f400);
+    border-radius: 15px;
+    margin: 15px 15px;
+    min-width: 300px;
+    width: 100%;
+    overflow: hidden;
+
+    /* transitions */
+    transition: transform 300ms ease;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.151);
+    transform: scale(1.04);
+    z-index: 300;
+}
+
+.card.one {
+    background-image: url(img/my\ portfolio\ photo.png);
+}
+.card.two {
+    background-image: url(img/gepeet\ pic.png);
+}
+.card.three {
+    background-image: url(img/nissan-silvia-spec-r-dave-thomas-speedhunters-1-1200x800.jpg);
+}
+.card.four {
+    background-image: url(img/nissan-silvia-spec-r-dave-thomas-speedhunters-1-1200x800.jpg);
+}
+
+.card .project-title{
+    color: var(--f400);
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.project-content{
+
+    padding: 30px;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / .5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    /* transform-origin: translateY(50%); */
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+    
+}
+
+.project-content h2{
+    letter-spacing: 2px;
+    outline: none;
+    padding: 0 0 0;
+    margin-bottom: 10px;
+}
+
+.card:hover .project-content{
+    transform: translateY(5%);
+}
+
+.card-body {
+    color: var(--f600);
+    font-size: 15px;
+    /* display: block; */
+}
+
+.button {
+    display: inline-block;
+    margin: 10px 0px;
+    background-color: var(--bg-page);
+    text-decoration: none;
+    /* width: 400px; */
+    color: var(--f400);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    transition: 500ms ease;
+}
+
+.button:hover{
+    background-color: var(--btn-hover);
+
 }

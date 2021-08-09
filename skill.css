@@ -1,0 +1,99 @@
+:root {
+    /* FONTS */
+    --f600: #9798A1;
+    --f400: #EDEDED;
+
+    /* BACKGROUND */
+    --bg-nav: #0F111C;
+    --bg-page: #121526;
+
+    /* BUTTON */
+    --btn-still :var(--bg-nav);
+    --btn-hover : rgba(255, 0, 0, 0.582);
+
+}
+
+.myskill{
+    /* background-color: seagreen; */
+    position: relative;
+}
+
+.icon-logo{
+    /* position: absolute; */
+    margin: 5px 0px;
+    height: auto;
+    width: auto;
+    /* background-color: rgb(148, 129, 116); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.log{
+    height: 150px;
+    width: 100px;
+    margin: 20px 20px;
+    /* background-color: rgb(2,0,36);
+    background-color: radial-gradient(circle, rgba(2,0,36,1) 13%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%); */
+    box-shadow: 5px 5px 4px 4px;
+}
+
+.log-det{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--f400);
+    text-align: center;
+}
+
+.log-det span{
+    font-size: 30px;
+    color: var(--f600);
+}
+
+.title-code, .title-no-code {
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--f400);
+}
+
+/* PHOTOS */
+.html{
+    background-image: url(img/logo/HTML5_Logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.css{
+    background-image: url(img/logo/CSS3_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.js{
+    background-image: url(img/logo/Javascript_Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.php{
+    background-image: url(img/logo/PHP-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.glide{
+    background-image: url(img/logo/glide\ logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bubble{
+    background-image: url(img/logo/bubble.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
