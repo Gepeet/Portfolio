@@ -72,12 +72,12 @@ form{
 }
 
 input{
-    /* display: block; */
+    display: block;
     height: 30px;
     margin-bottom: 15px;
 }
 
-.message label,input{
+.message label{
     /* padding: 0px 0px; */
     color: var(--f600);
     display: block;
