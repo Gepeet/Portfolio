@@ -13,6 +13,14 @@ table{
     margin: 30px 0px;
 }
 
+.contact h2 {
+    color: var(--f400);
+    text-align: center;
+    margin: 10px 0px;
+    letter-spacing: 2px;
+    outline: var(--f600) 1px solid;
+    padding: 10px 20px;
+}
 
 tr {
     background-color: var(--bg-page);
@@ -44,21 +52,42 @@ tr td{
     text-align: center;
     font-size: 23px;
     letter-spacing: 1px;
-    color: var(--f600);
+    color: var(--f400);
 }
 
 form{
     margin-top: 20px;
 }
 
-label{
-    display: block;
-    margin-top: 15px 0px;
+.name-email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--f600);
+
+}
+
+.email{
+    margin-left: 10px;
 }
 
 input{
+    /* display: block; */
     height: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+.message label,input{
+    /* padding: 0px 0px; */
+    color: var(--f600);
+    display: block;
+}
+
+.message textarea{
+    padding: 8px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
 .submit-btn{
@@ -73,7 +102,7 @@ input{
     width: 150px;
     font-size: 16px;
     border-radius: 10px;
-    border: none;
+    border: white 1px solid;
     transition: 500ms ease;
     background-color: var(--bg-nav);
     margin: auto;

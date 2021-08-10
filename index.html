@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="skill.css">
     <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;500;900&display=swap');
+        
     </style>
 </head>
 <body>    
@@ -26,7 +28,7 @@
         
         </div>
         <div class="version">
-            v0.7
+            v0.8
         </div>
         <div class="page" id="page">
             <ul class="nav">
@@ -39,19 +41,22 @@
             <!-- <div class="version">
                 v0.8
             </div> -->
-            <div class="container" id="about">
+            <div class="container about" id="about">
                 <div class="nav-det">
                     <p onclick="back()"><span class="span-hide">Back to </span>Navigation</p>
                     <p class="not">></p>
                     <p>About</p>
                 </div>
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
                 <div class="photo">
                     <img src="img/Untitled design (7).png" alt="">
                 </div>
                 <div class="about-me">
-                    <p> Hi there, My name is Ven Gallardo and I specialized in website development and design. Before I was just a grab driver and a driver for a rental services here in Manila. But when the pandemic strikes, I decided to shift my career into web development. This is to pursue my dream on programming and designs. I first stumbled on no code platforms like bubble.io and glide.io. And then after learning some basic knowledge on how websites work. I then started to code in HTML, CSS, JavaScript and React JS. Now this website is running only with code using google cloud as server.</p>
+                    <p> Hi there, my name is Ven Gallardo and I specialized in website development and design. Before I was just a grab driver and also drives for a rental service here in Manila. But during the pandemic, I decided to shift my career into web development. This is to pursue my dream on programming and designs. I first stumbled on no code platforms like bubble.io and glide.io. Then took some basic knowledge on how websites works using programming codes. I then started to tackle HTML, CSS, JavaScript and PHP. Now this website is running with code using HTML, CSS, Vanilla Javascript, Netlify as my hosting site and Airtable as my Backend.</p>
                 </div>
-                <div class="download">Download my CV</div>
+                <div class="download">For more information below.</div>
             </div>
             <div class="container project" id="project">
                 <div class="nav-det">
@@ -67,14 +72,14 @@
                         <div class="project-content">
                             <h2 class="project-title">My Portfolio</h2>
                             <p class="card-body">My first website using VSCode.</p>
-                            <a href="index.html" class="button">Visit site</a>
+                            <a href="index.html" target="_blank" rel="noopener noreferrer" class="button"  >Visit site</a>
                         </div>
                     </div>
                     <div class="card two">
                         <div class="project-content">
                             <h2 class="project-title">Gepeet.com</h2>
                             <p class="card-body">My first project using bubble.io</p>
-                            <a href="https://gepeet.com/about_page" class="button">Visit site</a>
+                            <a href="https://gepeet.com/about_page" target="_blank" rel="noopener noreferrer" class="button">Visit site</a>
                         </div>
                     </div>
                     <div class="card three">
@@ -99,7 +104,11 @@
                     <p class="not">></p>
                     <p>Skills</p>
                 </div>
+                <div class="title">
+                    <h2>Skills</h2>
+                </div>
                 <div class="title-code">Coding</div>
+                
                 <div class="icon-logo">
                     <div class="log html"></div>
                     <div class="log css"></div>
@@ -107,22 +116,27 @@
                     <div class="log php"></div>
                 </div>
                 
-                <div class="log-det">
-                   <h2>HTML: <span>70%</span></h2>
-                   <h2>CSS: <span>70%</span></h2>
-                   <h2>JAVASCRIPT: <span>50%</span></h2>
-                   <h2>PHP: <span>10%</span></h2>
-                </div>
+                
                 <div class="title-no-code">No Code Plateforms</div>
                 <div class="icon-logo">
                     <div class="log glide"></div>
                     <div class="log bubble"></div>
                 </div>
                 <div class="log-det">
-                    <h2>Bubble.io: <span>90%</span></h2>
-                    <h2>Glide: <span>90%</span></h2>
-                 </div>
-                <div class="download">Download my CV</div>
+                    <ul class="log-det-ul">
+                        <li>Specialty in front-end development.</li>
+                        <li>Can work with a team and communicate well in problem solving or brain storming.</li>
+                        <li>Experience in using HTML, JavaScript and CSS.</li>
+                        <li>Experience in designing platform like figma.</li>
+                        <li>Eager on experimenting and researching in UI/UX implementation.</li>
+                        <li>Knowledge in tools, such as SASS, GULP, GIT and GITHUB.</li>
+                        <li>Experience in Backend testing with MySQLi, PHP, PostMan and Airtable</li>
+                        <li>Proficient in no code tools such as Glide, Bubble.io and Airtable.</li>
+                        <li>Ability to demonstrate an initiative to achieve specific outcome.</li>
+                    </ul>
+                  </div>
+                
+                <div class="download">Redirect to my CV <a href="">Link</a></div>
             </div>
             <div class="container contact" id="contact">
                 <div class="nav-det">
@@ -130,25 +144,39 @@
                     <p class="not">></p>
                     <p>Contact</p>
                 </div>
+                <div class="title">
+                    <h2>Contact Details</h2>
+                </div>
                 <div class="contact-det">
                     <table>
                         <thead></thead>
                         <tr></tr>
                             <td class="td-title">Email</td>
-                            <td class="td-det">samplepalang@gmail.com</td>
+                            <td class="td-det">letskeddotcom@gmail.com</td>
                         <tr>
                             <td class="td-title">Phone number</td>
-                            <td class="td-det">0906-006-5xxx (Globe)</td>
+                            <td class="td-det">0906-006-5922 (Globe)</td>
                         </tr>
                     </table>
                 </div>
                 <div class="cta">
                     <h3>Get in touch</h3>
                     <form action="">
-                        <label for="">Name</label>
-                        <input type="text">
-                        <label for="">Email</label>
-                        <input type="text">
+                        <div class="name-email">
+                            <div class="name">
+                                <label for="">Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="email">
+                                <label for="">Email</label>
+                                <input type="text">
+                            </div> 
+                        </div>
+                        <div class="message">
+                            <label for="">Message</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <!-- <input type="textarea"> -->
+                        </div>
                         <input type="submit" value="Submit" class="submit-btn">
                     </form>
                 </div>

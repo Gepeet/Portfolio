@@ -10,34 +10,41 @@
 }
 
 .project{
+    /* padding-bottom: 100px; */
     height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    /* max-width: 800px; */
 }
 
 .project h2 {
     color: var(--f400);
     text-align: center;
-    margin-bottom: 10px;
-    letter-spacing: 1.5px;
+    margin: 10px 0px;
+    letter-spacing: 2px;
     outline: var(--f600) 1px solid;
     padding: 10px 20px;
 }
 
 .project .myprojects{
     /* background-color: blanchedalmond; */
-    height: 60vh;
+    height: 70vh;
     width: 50vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 50px; */
 }
+
+
 
 
 .card{
     /* position: absolute; */
+    /* z-index: 999; */
     background-color: black;
     display: flex;
     padding: 100px 0 0;
@@ -46,8 +53,8 @@
     color: var(--f400);
     border-radius: 15px;
     margin: 15px 15px;
-    min-width: 300px;
-    width: 100%;
+    min-width: 500px;
+    width: 80%;
     overflow: hidden;
 
     /* transitions */
@@ -68,9 +75,11 @@
 }
 .card.three {
     background-image: url(img/nissan-silvia-spec-r-dave-thomas-speedhunters-1-1200x800.jpg);
+    background-position: center;
 }
 .card.four {
-    background-image: url(img/nissan-silvia-spec-r-dave-thomas-speedhunters-1-1200x800.jpg);
+    background-image: url(img/DSC_98671-1200x800.jpg);
+    background-position: center;
 }
 
 .card .project-title{
