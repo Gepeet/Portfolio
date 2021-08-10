@@ -255,6 +255,9 @@ nav .tagline {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    box-shadow: 0px 0px 400px 4px rgba(7, 9, 109, 0.13);
+    
     
 }
 
