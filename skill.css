@@ -70,7 +70,7 @@
     background-image: url(img/logo/HTML5_Logo.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: soft-light;
+    background-blend-mode: hard-light;
 }
 
 .css{
@@ -79,7 +79,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode: soft-light;
+    background-blend-mode:hard-light;
 }
 
 .js{
@@ -88,7 +88,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode:soft-light;
+    background-blend-mode:hard-light;
 }
 
 .php{
@@ -97,7 +97,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode: soft-light;
+    background-blend-mode: hard-light;
 }
 
 .glide{
@@ -106,7 +106,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode:soft-light;
+    background-blend-mode:hard-light;
 }
 
 .bubble{
@@ -115,5 +115,5 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode: soft-light;
+    background-blend-mode:exclusion;
 }
