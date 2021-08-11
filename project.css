@@ -84,20 +84,20 @@
 
 .card .project-title{
     color: var(--f400);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: start;
 }
 
 .project-content{
 
-    padding: 30px;
+    padding: 20px;
     background: linear-gradient(
         hsl(0 0% 0% / 0),
         hsl(20 0% 0% / .5) 20%,
         hsl(0 0% 0% / 1)
     );
     /* transform-origin: translateY(50%); */
-    transform: translateY(65%);
+    transform: translateY(62%);
     transition: transform 500ms ease;
     
 }
