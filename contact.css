@@ -64,11 +64,11 @@ form{
     flex-wrap: wrap;
     justify-content: space-between;
     color: var(--f600);
-
+    
 }
 
-.email{
-    margin-left: 10px;
+.name input{
+    margin-right: 10px;
 }
 
 input{
