@@ -82,6 +82,11 @@
     background-position: center;
 }
 
+.card.five {
+    background-image: url(img/tfc.png);
+    background-position: center;
+}
+
 .card .project-title{
     color: var(--f400);
     margin-bottom: 10px;
