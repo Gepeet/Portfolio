@@ -87,6 +87,11 @@
     background-position: center;
 }
 
+.card.six{
+    background-image: url(img/art\ pic.png);
+    background-position: center;
+}
+
 .card .project-title{
     color: var(--f400);
     margin-bottom: 10px;
