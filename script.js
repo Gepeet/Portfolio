@@ -55,15 +55,11 @@ const button = document.getElementsByClassName('btn');
         for (i = 0; i < container.length; i++) {
             if(itemId === container[i].id){
                 container[i].classList.add("show");
-                // if (link.id === itemClass){
-                //     link.classList.add("toggle");
-                // }else{
-
-                // }
+                
 
             }else{
                 container[i].classList.remove("show");
-                // link.classList.remove("toggle");
+                
             }
         }
     }
