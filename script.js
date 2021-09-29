@@ -1,7 +1,7 @@
 /////ON PAGE LOAD
 
 const fadein = document.querySelector('.tagline');
-// let opacity = 0;
+
 window.onload = function(){
     setTimeout(function(){
         fadein.style.opacity=1;
