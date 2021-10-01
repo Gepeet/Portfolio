@@ -92,6 +92,11 @@
     background-position: center;
 }
 
+.card.seven{
+    background-image: url(img/smb.png);
+    background-position: center;
+}
+
 .card .project-title{
     color: var(--f400);
     margin-bottom: 10px;
