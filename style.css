@@ -65,19 +65,33 @@ nav .version{
 nav .tagline {
     /* display: none; */
     position: absolute;
-    left: 18%;
+    left: 15%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 10ch;
-    font-weight: 300;
-    color: var(--f600);
-    letter-spacing: 5px;
-    text-transform: uppercase;
-
-    
-
+    width: fit-content;
+    height: fit-content;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
     animation: tagline 2000ms;
 }
+
+.tagline> h1{
+    font-size: 100px;
+    position: unset;
+}
+
+.tagline > .tag__outline{
+    font-size: 70px;
+    color: black;
+    /* outline: 2px black solid; */
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
 
 @keyframes tagline {
     0% {opacity:0;}
@@ -87,20 +101,21 @@ nav .tagline {
 .tagline::after {
     position: absolute;
     top: 0%;
-    left: 75%;
+    right: 0%;
     content: '';
     width: 170px;
     height: 2px;
     background: sandybrown;
-    left: 75% ;
+    left: 80% ;
     transform: scaleX(0);
-    transform-origin: 80%;
+    transform-origin: 90%;
     transition: transform 1000ms ease;
 }
 
 .slide.tagline::after{
     transform: scaleX(1);
 }
+
 
 
 .nav-ctn {
