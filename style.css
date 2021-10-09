@@ -68,7 +68,7 @@ nav .tagline {
     left: 15%;
     top: 50%;
     transform: translateY(-50%);
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     /* background-color: aqua; */
     display: flex;
@@ -76,11 +76,14 @@ nav .tagline {
     flex-direction: column;
     align-items: flex-start;
     animation: tagline 2000ms;
+    
 }
 
 .tagline> h1{
     font-size: 100px;
     position: unset;
+    margin: 0 5%;
+    transition: all .9s ease;
 }
 
 .tagline > .tag__outline{
@@ -114,6 +117,16 @@ nav .tagline {
 
 .slide.tagline::after{
     transform: scaleX(1);
+}
+
+@media screen and (max-width: 700px) {
+    .tagline > h1{
+        font-size: 50px;
+        margin: 0 5%;
+    }
+    .tagline > .tag__outline{
+        font-size: 30px;
+    }
 }
 
 
