@@ -95,6 +95,11 @@
     background-position: center;
 }
 
+.card.eight{
+    background-image: url(img/webdev-sublist.png);
+    background-position: center;
+}
+
 .card .project-title{
     color: var(--f400);
     margin-bottom: 10px;
