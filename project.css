@@ -100,6 +100,11 @@
     background-position: center;
 }
 
+.card.nine{
+    background-image: url(img/projectOneofFifty.png);
+    background-position: center;
+}
+
 .card .project-title{
     color: var(--f400);
     margin-bottom: 10px;
