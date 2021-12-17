@@ -55,16 +55,10 @@
     min-width: 300px;
     width: 80%;
     overflow: hidden;
-
-    /* transitions */
-    transition: transform 300ms ease;
+    transform: scale(1);
+    transition: all .5s ease;
 }
 
-.card:hover{
-    box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.151);
-    transform: scale(1.04);
-    z-index: 300;
-}
 
 
 .card.two {
@@ -93,6 +87,7 @@
     background-image: url(img/art\ pic.png);
     background-position: center;
     background-size: 100%;
+    transition:all 1s ease;
 }
 
 .card.seven{
@@ -115,7 +110,9 @@
 }
 .card:hover{
     background-size: 110%;
-    transition: all 1s ease;
+    box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.151);
+    transform: scale(1.04);
+    z-index: 300;
 }
 
 .card .project-title{
