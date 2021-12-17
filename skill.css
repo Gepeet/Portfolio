@@ -46,7 +46,7 @@
     list-style: disc;
     font-size: 16px;
     text-align: left;
-    color: var(--f600);
+    color: var(--f400);
 }
 
 .myskill h2 {
@@ -71,7 +71,7 @@
     background-image: url(img/logo/HTML5_Logo.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: hard-light;
+    background-blend-mode:luminosity;
 }
 
 .css{
@@ -80,7 +80,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode:hard-light;
+    background-blend-mode:luminosity;
 }
 
 .js{
@@ -89,7 +89,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode:hard-light;
+    background-blend-mode:luminosity;
 }
 
 .php{
@@ -98,23 +98,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode: hard-light;
+    background-blend-mode:luminosity;
 }
 
-.glide{
+.react{
     background-color: var(--bg-nav);
-    background-image: url(img/logo/glide\ logo.jpg);
+    background-image: url(img/logo/reactjs-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode:hard-light;
-}
-
-.bubble{
-    background-color: var(--bg-nav);
-    background-image: url(img/logo/bubble.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-blend-mode:exclusion;
+    background-blend-mode:luminosity;
 }
