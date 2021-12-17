@@ -68,7 +68,7 @@ nav .tagline {
     left: 15%;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: max-content;
     height: fit-content;
     /* background-color: aqua; */
     display: flex;
@@ -82,7 +82,7 @@ nav .tagline {
 .tagline> h1{
     font-size: 100px;
     position: unset;
-    margin: 0 5%;
+    width: max-content;
     transition: all .9s ease;
 }
 
