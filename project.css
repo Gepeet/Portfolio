@@ -69,39 +69,53 @@
 
 .card.two {
     background-image: url(img/gepeet\ pic.png);
+    background-position: center;
+    background-size: 100%;
 }
 .card.three {
     background-image: url(img/sample-web.png);
     background-position: center;
+    background-size: 100%;
 }
 .card.four {
     background-image: url(img/Shoes\ website\ photo.png);
     background-position: center;
+    background-size: 100%;
 }
 
 .card.five {
     background-image: url(img/tfc.png);
     background-position: center;
+    background-size: 100%;
 }
 
 .card.six{
     background-image: url(img/art\ pic.png);
     background-position: center;
+    background-size: 100%;
 }
 
 .card.seven{
     background-image: url(img/smb.png);
     background-position: center;
+    background-size: 100%;
 }
 
 .card.eight{
     background-image: url(img/webdev-sublist.png);
     background-position: center;
+    background-size: 100%;
 }
 
 .card.nine{
     background-image: url(img/projectOneofFifty.png);
     background-position: center;
+    background-size: 100%;
+    
+}
+.card:hover{
+    background-size: 110%;
+    transition: all 1s ease;
 }
 
 .card .project-title{
@@ -111,7 +125,6 @@
 }
 
 .project-content{
-
     padding: 20px;
     background: linear-gradient(
         hsl(0 0% 0% / 0),
@@ -149,6 +162,7 @@
 .card:hover .project-content{
     transform: translateY(6%);
 }
+
 
 .card-body {
     color: var(--f600);
