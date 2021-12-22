@@ -46,7 +46,7 @@
     background-color: black;
     display: flex;
     padding: 100px 0 0;
-    background-size: cover;
+    background-size: contain;
     flex-direction: column;
     color: var(--f400);
     border-radius: 15px;
@@ -57,6 +57,7 @@
     overflow: hidden;
     transform: scale(1);
     transition: all .5s ease;
+    background-repeat:repeat-y;
 }
 
 
@@ -110,10 +111,12 @@
 }
 .card.ten{
     background-image: url(img/socialMedia.png);
-    background-position: center;
+    background-position:center;
     background-size: 100%;
     
 }
+
+
 .card:hover{
     background-size: 110%;
     box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.151);
@@ -126,6 +129,15 @@
     margin-bottom: 10px;
     text-align: start;
 }
+
+@media screen and (max-width: 1400px) {
+    .card .project-title{
+        color: var(--f400);
+        margin-bottom: 10px;
+        text-align: start;
+        font-size: large;
+    }
+  }
 
 .project-content{
     padding: 20px;
