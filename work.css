@@ -1,0 +1,161 @@
+:root {
+    /* FONTS */
+    --f600: #9798A1;
+    --f400: #EDEDED;
+
+    /* BACKGROUND */
+    --bg-nav: #0F111C;
+    --bg-page: #121526;
+
+}
+
+.work{
+    /* padding-bottom: 100px; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title h2 {
+    color: var(--f400);
+    text-align: center;
+    margin: 10px 0px;
+    letter-spacing: 2px;
+    outline: var(--f600) 1px solid;
+    padding: 10px 20px;
+}
+
+.work .myworks{
+    /* background-color: blanchedalmond; */
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 50px; */
+}
+
+
+
+
+.cardWork{
+    /* position: absolute; */
+    /* z-index: 999; */
+    background-color: black;
+    display: flex;
+    padding: 100px 0 0;
+    background-size: contain;
+    flex-direction: column;
+    color: var(--f400);
+    border-radius: 15px;
+    margin: 0px 15px;
+    margin-bottom: 50px;
+    min-width: 300px;
+    width: 80%;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all .5s ease;
+    background-repeat:repeat-y;
+}
+
+
+
+.cardWork.one {
+    background-image: url(img/UncleLylesWebsite.png);
+    background-position: center;
+    background-size: 100%;
+}
+.cardWork.two {
+    background-image: url(img/NapayWebStudio.png);
+    background-position: center;
+    background-size: 100%;
+}
+
+.cardWork:hover{
+    background-size: 110%;
+    box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.151);
+    transform: scale(1.04);
+    z-index: 300;
+}
+
+.cardWork .work-title{
+    color: var(--f400);
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+@media screen and (max-width: 1400px) {
+    .cardWork .work-title{
+        color: var(--f400);
+        margin-bottom: 10px;
+        text-align: start;
+        font-size: large;
+    }
+  }
+
+.work-content{
+    padding: 20px;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / .5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    /* transform-origin: translateY(50%); */
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+    
+}
+
+.work-content .techonologies{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.techonologies .ts{
+    padding: 0 10px;
+    border: none;
+    margin-right: 5px;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.342);
+    font-size: small;
+}
+
+.work-content h2{
+    letter-spacing: 2px;
+    outline: none;
+    padding: 0 0 0;
+    margin-bottom: 10px;
+}
+
+.cardWork:hover .work-content{
+    transform: translateY(6%);
+}
+
+
+.cardWork-body {
+    color: var(--f600);
+    font-size: 15px;
+    /* display: block; */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(184, 43, 43, 0.788);
+    text-decoration: none;
+    /* width: 400px; */
+    color: var(--f400);
+    padding: 5px 20px;
+    border-radius: 5px;
+
+    transition: 500ms ease;
+}
+
+.button:hover{
+    background-color: red;
+
+}
